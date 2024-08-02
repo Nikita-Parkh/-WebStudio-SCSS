@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "hw_7",
+			"path": "../../hw_7"
+		},
+		{
+			"name": "Photoblog",
+			"path": "../../../Users/USA PC/Desktop/Photoblog"
+		},
+		{
+			"name": "Bakery",
+			"path": "../../Bakery"
+		},
+		{
+			"name": "Кузя",
+			"path": "../../../Users/USA PC/Desktop/Кузя"
+		},
+		{
+			"path": "../../hw-25"
+		},
+		{
+			"path": "../../hw-27"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hw_7",
+		"liveServer.settings.port": 5501
+	}
+}
