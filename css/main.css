@@ -22,6 +22,16 @@ img {
   height: auto;
 }
 
+.portfolio .portfolio-button-list, .clients .clients-list, .team .team-item .team-item__list, .team .team-item .team-item__title, .team .team-item .team-item__description, .team .team__title, .activities .activities__title {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .form .form-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .body {
   font-family: "Roboto";
 }
@@ -181,8 +191,8 @@ img {
 
 .hero .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .overlay {
@@ -195,9 +205,9 @@ img {
 
 .hero {
   display: flex;
+  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
 }
 .hero .hero__title {
   display: flex;
@@ -292,9 +302,9 @@ img {
 }
 .hero .form {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .hero .form .form__description {
   font-weight: 700;
@@ -335,8 +345,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .hero .form .form-checkbox {
-  display: flex;
-  flex-direction: row-reverse;
   margin-bottom: 30px;
 }
 .hero .form .form-checkbox .form-checkbox__span > a {
@@ -464,8 +472,6 @@ img {
   padding-top: 94px;
 }
 .activities .activities__title {
-  display: flex;
-  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -488,8 +494,8 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   top: 224px;
 }
 .activities .activities-list .activities-list__item {
@@ -506,8 +512,6 @@ img {
   background-color: #F5F4FA;
 }
 .team .team__title {
-  display: flex;
-  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -529,8 +533,6 @@ img {
   margin-bottom: 30px;
 }
 .team .team-item .team-item__description {
-  display: flex;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -541,13 +543,11 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
 .team .team-item .team-item__title {
-  display: flex;
-  justify-content: center;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -556,8 +556,6 @@ img {
   margin-bottom: 16px;
 }
 .team .team-item .team-item__list {
-  display: flex;
-  justify-content: center;
   gap: 10px;
 }
 .team .team-item .team-item__item {
@@ -566,8 +564,8 @@ img {
   width: 44px;
   height: 44px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .team .team-item .team-item__link {
   transition-property: background-color, fill;
@@ -595,8 +593,6 @@ img {
   margin-bottom: 50px;
 }
 .clients .clients-list {
-  display: flex;
-  justify-content: center;
   gap: 30px;
 }
 .clients .clients-list .clients-list__item {
@@ -617,8 +613,8 @@ img {
 .clients .clients-list .clients-list__link {
   fill: rgb(175, 177, 184);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   /* animation */
   transition-property: fill;
   transition-duration: 250ms;
@@ -790,8 +786,6 @@ img {
   display: none;
 }
 .portfolio .portfolio-button-list {
-  display: flex;
-  justify-content: center;
   margin-bottom: 34px;
   padding-bottom: 16px;
   /* margin-top: 94px; */
@@ -855,8 +849,8 @@ img {
   transform: translateY(100%);
   background-color: #2196F3;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   opacity: 0.9;
   /* animation */
   transition-property: transform;

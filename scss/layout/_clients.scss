@@ -11,16 +11,13 @@
         margin-bottom:50px;
     }
     .clients-list{
-        display: flex;
-        justify-content: center;
+        @extend %FLXJSTFcntr;
         gap: 30px;
 
         .clients-list__item{
             flex-basis: 170px;
             height: 92px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include FLXAIcntrJCcntr;
             border: 1px solid getColor('color-fill');
             cursor: pointer;
             border-radius: 4px;
@@ -32,9 +29,7 @@
         }
         .clients-list__link{
             fill: getColor('color-fill');
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include FLXAIcntrJCcntr;
              /* animation */
             transition-property:fill;
             transition-duration: 250ms;
