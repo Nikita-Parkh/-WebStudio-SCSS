@@ -1,3 +1,9 @@
 .body{
-    font-family:getFont('font-family')
+    font-family:getFont('font-family');
+    // box-sizing: border-box;
+    overflow-x: hidden;
+}
+main{
+    min-width: 320px;
+    width: 100%;
 }

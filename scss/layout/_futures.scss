@@ -1,19 +1,45 @@
 .futures .container{
     display: flex;
 }
-.futures{
-    padding-top:94px;  
+.futures{  
+    width: 100%;
+    margin: 0 auto; 
+    padding-top:60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$desktop) {
+        padding-top:94px;
+        padding-bottom: auto;
+    }
 
     .futures__title{
         display: none;
     }
     .futures-list{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        @media screen and (min-width:$tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            flex-direction: row;
+        }
 
         .futures-list__item{
-            margin-right:30px;
-            flex-basis:270px;
+
+            @media screen and (min-width:$mobile) {
+                flex-basis:226px;
+            }
+            @media screen and (min-width:$tablet) {
+                flex-basis:354px;
+            }
+            @media screen and (min-width:$desktop) {
+                margin-right: 30px;
+                flex-basis:270px;
+            }
         }
         .futures-list__item::before{
             margin-bottom: 30px;
@@ -21,10 +47,24 @@
             display: inline-block;
             background-color: getColor('color-for-img-InFutures');
             border-radius: 4px;
-            width: 270px;
+            width:100vw;
             height: 120px;
             background-repeat: no-repeat;
             background-position: center;
+
+            @media screen and (min-width:$mobile) {
+                width: 450px;
+                height: 120px;
+            }
+            @media screen and (min-width:$tablet) {
+                width: 354px;
+                height: 120px;
+            }
+            @media screen and (min-width:$desktop) {
+                width: 270px;
+                height: 120px;
+            }
+            
         }
         .futures-list__item:nth-child(1):before{
             background-image:url(../images/antenna.svg);
@@ -46,6 +86,14 @@
             font-size: 14px;
             letter-spacing: 0.03em;
             color: getColor('color-two');
+            text-align: center;
+
+            @media screen and (min-width:$tablet) {
+                text-align: start;
+            }
+            @media screen and (min-width:$desktop) {
+                text-align: start;
+            }
         }
         .futures-list__description{
             font-weight: 400;
@@ -54,7 +102,18 @@
             letter-spacing: 0.03em;
             color: getColor('color-three');
             margin-top:10px;
-            width: 300px;
+            width: 100vw;
+            text-align: start;
+            @media screen and (min-width:$mobile) {
+                width: 450px; 
+                height: 50px;
+            }
+            @media screen and (min-width:$tablet) {
+                width: 354px;
+            }
+            @media screen and (min-width:$desktop) {
+                width: 300px;
+            }
         }
     }
 }

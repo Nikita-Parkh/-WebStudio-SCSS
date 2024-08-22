@@ -1,7 +1,10 @@
-.activities{
+.activities{ 
     padding-bottom:94px;
     padding-top: 94px;
 
+    @media screen and (max-width:$desktop) {
+        display: none;
+    }
     .activities__title{
         @extend %FLXJSTFcntr;
         font-weight: 700;

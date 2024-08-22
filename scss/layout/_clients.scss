@@ -1,21 +1,42 @@
 .clients{
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$desktop) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 
     .clients__title{
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         letter-spacing: 0.03em;
         text-align: center;
         color: getColor('color-two');
-        margin-bottom:50px;
+        margin-bottom:30px;
+        
+        @media screen and (min-width:$desktop){
+            font-size: 36px;
+            margin-bottom:50px;
+        }
     }
     .clients-list{
-        @extend %FLXJSTFcntr;
         gap: 30px;
+        flex-direction: column;
+        @include GRIDforMobile;
+
+        @media screen and (min-width:$tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: none;
+        }
+        @media screen and (min-width:$desktop){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         .clients-list__item{
-            flex-basis: 170px;
+            flex-basis: 210px;
             height: 92px;
             @include FLXAIcntrJCcntr;
             border: 1px solid getColor('color-fill');
@@ -26,6 +47,13 @@
             transition-duration: none;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-delay:none;
+
+            @media screen and (min-width:$tablet) {
+                flex-basis: 226px;
+            }
+            @media screen and (min-width:$tablet) {
+                flex-basis: 170px;
+            }
         }
         .clients-list__link{
             fill: getColor('color-fill');
