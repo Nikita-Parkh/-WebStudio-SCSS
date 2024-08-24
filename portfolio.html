@@ -18,6 +18,43 @@
         <div class="container">
         <nav class="header-nav">
             <a href="./" class="header-nav__link"><span class="header-nav__web--style">Web</span><span class="header-nav__studio">Studio</span></a>
+            <div class="header-nav-container">
+                <input type="checkbox" class="header-nav-container__input" id="toogle">
+                <label for="toogle" class="header-nav-label">
+                <svg class="header-nav-label__button-open" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black"/>
+                </svg>
+                <svg class="header-nav-label__button-close" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z"
+                     fill="#212121" />
+                  </svg>
+                </label>
+                <div class="header-nav-container-second">
+                <ul class="header-nav-container-list">
+                    <li class="header-nav-container-list__item">
+                        <h2 class="header-nav-container-list__title"> <a href="./index.html" class="header-nav-container-list__link header-nav-container-list__link">Студія</a></h2>
+                    </li>
+                    <li class="header-nav-container-list__item">
+                        <h2 class="header-nav-container-list__title"> <a href="./portfolio.html" class="header-nav-container-list__link-portfolio">Портфоліо</a></h2>
+                    </li>
+                    <li class="header-nav-container-list__item">
+                        <h2 class="header-nav-container-list__title"> <a href="./" class="header-nav-container-list__link">Контакти</a></h2>
+                    </li>
+                    <li class="header-nav-container-list__item--tel">
+                        <a href="tel:+380961111111" class="header-nav-container-list__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="header-nav-container-list__item">
+                        <a href="mailto:info@devstudio.com" class="header-nav-container-list__email">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="header-nav-container-social-list">
+                    <li class="header-nav-container-social-list__item"><a href="./" class="header-nav-container-social-list__link">Instagram</a></li>
+                    <li class="header-nav-container-social-list__item"><a href="./" class="header-nav-container-social-list__link">Twitter</a></li>
+                    <li class="header-nav-container-social-list__item"><a href="./" class="header-nav-container-social-list__link">Facebook</a></li>
+                    <li class="header-nav-container-social-list__item"><a href="./" class="header-nav-container-social-list__link">LinkedIn</a></li>
+                </ul>
+            </div>
+            </div>
             <ul class="header-nav-list">
                 <li class="header-nav-list__item">
                     <a href="./index.html" class="header-nav-list__link">Студія</a>
@@ -69,10 +106,10 @@
                     <button class="portfolio-button-list__button" type="button">Додатки</button>
                 </li>
                 <li class="portfolio-button-list__item">
-                    <button class="portfolio-button-list__button" type="button">Дизайн</button>
+                    <button class="portfolio-button-list__button portfolio-button-fourth" type="button">Дизайн</button>
                 </li>
                 <li class="portfolio-button-list__item">
-                    <button class="portfolio-button-list__button" type="button">Маркетинг</button>
+                    <button class="portfolio-button-list__button portfolio-button-five" type="button">Маркетинг</button>
                 </li>
             </ul>
             <ul class="portfolio-card-list">

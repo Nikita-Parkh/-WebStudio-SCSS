@@ -1,13 +1,43 @@
+.header{
+    .header-nav{
+        .header-nav-container-second{
+            .header-nav-container-list__link-portfolio{
+                font-family: getFont('font-family');
+                font-weight: 500;
+                font-size: 40px;
+                letter-spacing: 0.02em;
+                color:getColor('color-one');
+    }
+}
+}
+}
+
+
 .portfolio{
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width:$desktop) {
+        padding: 94px 0;
+    }
 
     .portfolio__title{
         display:none;
     }
     .portfolio-button-list{
-        @extend %FLXJSTFcntr;
-        margin-bottom:34px;
+        margin-bottom:40px;
         padding-bottom:16px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-right: 100%;
+
+        @media screen and (min-width:$desktop){
+            margin-bottom:34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         /* margin-top: 94px; */
 
         .portfolio-button-list__button,.portfolio-button-list__button--first{
@@ -23,6 +53,10 @@
         .portfolio-button-list__button{
             padding:6px 22px;
         }
+        .portfolio-button-fourth
+        .portfolio-button-five{
+            grid-column: span 1;
+        }
         .portfolio-button-list__button:active{
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
             background: getColor('color-one');
@@ -37,7 +71,9 @@
             padding:6px 25px;
         }
         .portfolio-button-list__item:not(:last-child){
-            margin-right: 8px;
+            @media screen and (min-width:$desktop) {
+                margin-right: 8px;
+            }
         }
     }
     .portfolio-card-list{

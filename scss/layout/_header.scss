@@ -191,6 +191,12 @@
             @media screen and (max-width:$tablet) {
                 display: none;
             }
+            @media screen and (min-width:$tablet) {
+                display: flex;
+            }
+            @media screen and (min-width:$desktop) {
+                display: flex;
+            }
 
             .header-nav-list__link{
                 // position: relative;
@@ -253,11 +259,17 @@
     }
     .header-contact-list{
         display: flex; 
+
         @media screen and (max-width:$tablet) {
             display: none;
         }
-        @media screen and (max-width:$desktop) {
-            flex-direction: column;
+        @media screen and (min-width:$tablet) {
+            display: flex;
+           flex-direction: column; 
+        }
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            flex-direction: row;
         }
 
         .header-contact-list__email,.header-contact-list__tel{
@@ -268,8 +280,8 @@
             width: 142px;
             height: 16px;
 
-            @media screen and (max-width:$desktop) {
-                margin-top: 10px;
+            @media screen and (min-width:$desktop) {
+                margin-top: auto;
             }
         }
         .header-contact-list__item:hover .header-contact-list__email{
