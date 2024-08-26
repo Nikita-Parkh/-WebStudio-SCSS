@@ -1,5 +1,6 @@
 .header > .container {
     @include FLXcntr;
+    position: relative;
     /* margin-left: 215px; */
 }
 .header{
@@ -25,13 +26,15 @@
         @include FLXcntr;
         @media screen and (min-width:$tablet) 
         {
-            margin-right: 92px;
+            margin-right: 60px;
         }
         @media screen and (min-width:$desktop) 
         {
             margin-right: 318px;
         }
         .header-nav-container{
+            position: absolute;
+            margin-left: 90%;
             @media screen and (min-width:$tablet) {
                 display: none;
             }
@@ -54,12 +57,9 @@
                     position: fixed;
                     left: 95%;
                 }
-                .header-nav-label{
-                    margin-left:27vw;
-                    @media screen and (max-width:360px) {
-                        margin-left: -60px;
-                    }
-                }
+                // .header-nav-label{
+                //    margin-left: 200px;
+                // }
                 .header-nav-label__button-close>path:hover{
                     fill: getColor('color-one');
                 }
@@ -166,6 +166,7 @@
             margin-right:85px;
             min-width: 134px;
             min-height: 28px;
+            margin-left: 16px;
             @media screen and (min-width:$mobile) 
             {
                 margin-right:85px;
@@ -181,6 +182,7 @@
                 margin-right:93px;
                 min-height: 31px;
                 min-width: 145px;
+                margin-left: auto;
             }
         }
         .header-nav__studio{

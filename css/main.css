@@ -100,6 +100,7 @@ main {
 .header > .container {
   display: flex;
   align-items: center;
+  position: relative;
   /* margin-left: 215px; */
 }
 
@@ -128,13 +129,17 @@ main {
 }
 @media screen and (min-width: 768px) {
   .header .header-nav {
-    margin-right: 92px;
+    margin-right: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header .header-nav {
     margin-right: 318px;
   }
+}
+.header .header-nav .header-nav-container {
+  position: absolute;
+  margin-left: 90%;
 }
 @media screen and (min-width: 768px) {
   .header .header-nav .header-nav-container {
@@ -158,14 +163,6 @@ main {
   z-index: 6;
   position: fixed;
   left: 95%;
-}
-.header .header-nav .header-nav-container .header-nav-label {
-  margin-left: 27vw;
-}
-@media screen and (max-width: 360px) {
-  .header .header-nav .header-nav-container .header-nav-label {
-    margin-left: -60px;
-  }
 }
 .header .header-nav .header-nav-container .header-nav-label__button-close > path:hover {
   fill: #2196F3;
@@ -261,6 +258,7 @@ main {
   margin-right: 85px;
   min-width: 134px;
   min-height: 28px;
+  margin-left: 16px;
 }
 @media screen and (min-width: 480px) {
   .header .header-nav__link {
@@ -279,6 +277,7 @@ main {
     margin-right: 93px;
     min-height: 31px;
     min-width: 145px;
+    margin-left: auto;
   }
 }
 .header .header-nav__studio {
@@ -576,13 +575,8 @@ main {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: 1px;
   cursor: pointer;
-  width: 50vw;
-}
-@media screen and (min-width: 480px) {
-  .hero .hero__button {
-    padding: 10px 32px;
-    width: auto;
-  }
+  padding: 10px 32px;
+  width: auto;
 }
 @media screen and (min-width: 768px) {
   .hero .hero__button {
@@ -897,6 +891,11 @@ main {
 .futures .futures-list .futures-list .futures-list__item {
   margin-right: 0px;
 }
+@media screen and (min-width: 1200px) {
+  .futures .futures-list .futures-list__item {
+    margin-right: -30px;
+  }
+}
 .futures .futures-list .futures-list__title {
   font-weight: 700;
   font-size: 14px;
@@ -945,7 +944,7 @@ main {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .activities {
     display: none;
   }
