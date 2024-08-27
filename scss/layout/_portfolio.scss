@@ -31,11 +31,18 @@
         gap: 15px;
         margin-right: 100%;
 
+        @media screen and (min-width:$tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: auto;
+        }
         @media screen and (min-width:$desktop){
             margin-bottom:34px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-right: auto;
         }
 
         /* margin-top: 94px; */
@@ -53,6 +60,9 @@
         .portfolio-button-list__button{
             padding:6px 22px;
         }
+        .portfolio-button-list__button{
+            margin-right: -5px;
+        }
         .portfolio-button-fourth
         .portfolio-button-five{
             grid-column: span 1;
@@ -68,7 +78,13 @@
             color:white;
         }
         .portfolio-button-list__button--first{
-            padding:6px 25px;
+            padding:6px 35px;
+            @media screen and (min-width:$tablet) {
+                padding: 6px 22px;
+            }
+            @media screen and (min-width:$desktop) {
+                padding: 6px 22px;
+            }
         }
         .portfolio-button-list__item:not(:last-child){
             @media screen and (min-width:$desktop) {
@@ -78,10 +94,28 @@
     }
     .portfolio-card-list{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 30px;
+        width: 450px;
+
+        @media screen and (min-width:$tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: auto;
+        }
         .portfolio-card-list__item{
             flex-basis: calc((100% - 60px) / 3);
+
+            
+            @media screen and (min-width:$desktop) {
+                flex-basis: auto
+            }
         }
         .portfolio-card-list__item:hover{
             box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12)
@@ -95,6 +129,30 @@
         .container-overlay{
             position: relative;
             overflow: hidden;
+            width: 450px;
+
+            @media screen and (min-width:$tablet) {
+                width: 354px;
+            }
+            @media screen and (min-width:$desktop) {
+                width: auto
+            }
+
+            img[alt="first-img"],img[alt="second-img"],img[alt="third-img"],img[alt="fourth-img"]
+            ,img[alt="fifth-img"],img[alt="sixth-img"],img[alt="seventh-img"],img[alt="eighth-img"]
+            ,img[alt="ninth-img"]{
+                width: 450px;
+                height: 294px;
+
+                @media screen and (min-width:$tablet) {
+                    width: 354px;
+                }
+
+                @media screen and (min-width:$desktop) {
+                    width: 370px;
+                    height: auto;
+                }
+            }
 
             .container-overlay__overlay{
                 position: absolute;
@@ -110,6 +168,10 @@
                 transition-property:transform;
                 transition-duration: 250ms;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+                @media screen and (min-width:$tablet) {
+                    width: 354px;
+                }
             }
             .container-overlay__description{
                 font-weight: 400;
@@ -130,6 +192,15 @@
             border-right:1px solid getColor('color-for-border-inPortfolio');
             border-left: 1px solid getColor('color-for-border-inPortfolio');
             padding: 20px 24px;
+            width: 450px;
+
+            @media screen and (min-width:$tablet) {
+                width: 354px;
+            }
+
+            @media screen and (min-width:$desktop) {
+                width: auto
+            }
 
             .text-for-card__title{
                 font-weight: 700;
