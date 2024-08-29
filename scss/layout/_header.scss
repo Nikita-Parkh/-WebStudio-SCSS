@@ -83,6 +83,7 @@
                     z-index: 5;
                     padding-top: 48px;
                     overflow: auto;
+
                 .header-nav-container-list{
                     @media screen and (max-width:$tablet) {
                         display: none;
@@ -155,6 +156,7 @@
         .header-nav-label{
             position: relative;
         }
+        
 
         .header-nav__link{  
             font-family:getFont('second-family');

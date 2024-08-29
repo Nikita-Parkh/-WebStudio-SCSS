@@ -1474,7 +1474,7 @@ main {
 }
 
 .portfolio {
-  padding: 60px 0;
+  padding: 60px 0px 60px 15px;
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
@@ -1651,6 +1651,11 @@ main {
 @media screen and (min-width: 768px) {
   .portfolio .portfolio-card-list .container-overlay .container-overlay__overlay {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio-card-list .container-overlay .container-overlay__overlay {
+    width: 100%;
   }
 }
 .portfolio .portfolio-card-list .container-overlay .container-overlay__description {
