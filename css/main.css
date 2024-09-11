@@ -424,12 +424,18 @@ main {
 
 .overlay {
   background-color: #2F303A;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imageForBG.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 480px;
   height: 400px;
+  background-image: url(../images/hero-d-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url(../images/hero-d-2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .overlay {

@@ -8,13 +8,23 @@
      linear-gradient(
          to right ,
          getColor('color-for-BG-in-hero'),
-         getColor('color-for-BG-in-hero')),
-         url(../images/imageForBG.jpg); 
+         getColor('color-for-BG-in-hero'));
+        //  url(../images/imageForBG.jpg); 
      background-size: cover; 
      background-position: center;  
      background-repeat: no-repeat;
      width: 480px;
      height: 400px;
+     background-image: url(../images/hero-d-1x.jpg);
+     
+     @media(min-device-pixel-ratio: 2), 
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx){
+        .overlay{
+            background-image: url(../images/hero-d-2x.jpg);
+        }
+     }
      @media screen and (min-width:$tablet){
         height: 400px;
         width: 768px;
